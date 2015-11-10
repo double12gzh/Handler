@@ -39,7 +39,7 @@
           <h2>
 <a id="项目概述" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%BF%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目概述</h2>
 
-<pre><code> 用于海珍品养殖的多功能水下监测与捕捞作业系统可以代替潜水员下潜到海底连续作业，可以高效完成采取水样、检
+<pre><code>用于海珍品养殖的多功能水下监测与捕捞作业系统可以代替潜水员下潜到海底连续作业，可以高效完成采取水样、检
 测海水PH值、水下环境监测，捕捞海参、鲍鱼、海胆等海珍品。本系统在水下的工作过程中，操作人员只需要在岸上通
 过水下摄像头拍摄的实时监测录像监控水下的情况，并通过控制手柄简单方便地向该系统发送控制指令，通过控制四个
 推进器在可变速的情况下来完成前进、后退以及上浮、下潜等操作，通过控制机械臂完成捕捞作业，通过自身携带的
@@ -48,10 +48,14 @@ PH酸碱度计、水样采集器完成水质监测。本系统的研发可以用
 </code></pre>
 
 <h2>
-<a id="产品描述" class="anchor" href="#%E4%BA%A7%E5%93%81%E6%8F%8F%E8%BF%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>产品描述</h2>
+<a id="产品架构" class="anchor" href="#%E4%BA%A7%E5%93%81%E6%9E%B6%E6%9E%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>产品架构</h2>
 
-<pre><code>本作业平台为水下有缆机器人（ROV），硬件外观包括：全方位动力推进器，控制舱，能源动力舱，机械手臂，中央指
-令输出单元，传感器阵列，保护模块，视频采集系统，控制手柄。
+<pre><code>本作业平台为水下有缆机器人（ROV），分为硬件与软件两大部分。
+主要硬件包括：全方位动力推进器，控制舱，能源动力舱，机械手臂，中央指令输出单元，传感器阵列，保护模块，视频采
+集系统，控制手柄。
+软件系统架构：软件代码托管于github,基本框架基于Windows MFC接口，借助于windows interface,提供读取控制手柄
+软出指令序列的能力，并将输出的位置序列转换为舵机所能识别的指令代码。指令的译码形式为连续式，可以实现推进器控制
+的无级变速。
 </code></pre>
 
 <h2>
@@ -74,8 +78,8 @@ PH酸碱度计、水样采集器完成水质监测。本系统的研发可以用
 <h2>
 <a id="视频演示" class="anchor" href="#%E8%A7%86%E9%A2%91%E6%BC%94%E7%A4%BA" aria-hidden="true"><span class="octicon octicon-link"></span></a>视频演示</h2>
 
-<pre><code>http://v.youku.com/v_show/id_XNTM2NjMxNjA4.html?from=s1.8-1-1.2 
-http://v.youku.com/v_show/id_XNTM5OTYwNzY4.html?from=y1.7-1.2
+<pre><code>[实验视频1](http://v.youku.com/v_show/id_XNTM2NjMxNjA4.html?from=s1.8-1-1.2) 
+[实现视频2](http://v.youku.com/v_show/id_XNTM5OTYwNzY4.html?from=y1.7-1.2)
 </code></pre>
 
 <h2>
